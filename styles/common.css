@@ -1,0 +1,65 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.background-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Make sure the wrapper is below other content */
+}
+
+.background-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../public/images/cmid_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../public/images/cmid_landscape.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  pointer-events: none; /* Allow interactions with elements below the overlay image */
+}
+
+body {
+  margin: 0;
+}
+
+/* input {
+  background-color: #37374f !important;
+}
+
+input:-internal-autofill-selected {
+  background-color: #37374f !important;
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+} */
+
+/* input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-internal-autofill-selected {
+  appearance: none;
+  background-color: yellow !important;
+  color: red !important;
+}
+
+.my-text-input:-webkit-autofill {
+  background-color: yellow;
+  color: red;
+} */

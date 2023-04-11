@@ -1,0 +1,7 @@
+.loginWrapper {
+  height: calc(100vh - 80px);
+  width: calc(38.8vw - 160px);
+  background-color: #272735;
+  min-width: 215px;
+  padding: 80px 80px 0;
+}
